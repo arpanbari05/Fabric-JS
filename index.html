@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabric JS</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex-container">
+      <label class="btn-primary">
+        <span>Choose image to upload</span>
+        <input
+          class="visually-hidden"
+          id="myImg"
+          type="file"
+          accept="image/*"
+        />
+      </label>
+      <button
+        class="btn-primary btn-danger"
+        onclick="clearCanvas(canvas)"
+      >
+        Clear
+      </button>
+    </div>
+
+    <canvas id="canvas" class="canvas-wrapper"> </canvas>
+
+    <script src="./lib/jscolor.js"></script>
+    <script src="./lib/fabric.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
